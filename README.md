@@ -4,8 +4,8 @@ For details on how to set everything up, see the original [README](https://githu
 
 ### Changes I made
 
-* Add support for company info ([24fcefe](https://github.com/G00fY2/g00fy2.github.io/commit/24fcefe212f21d1599fa57a80466705f43518ee6))
-* Add social support for Reddit and Xing ([a85e440](https://github.com/G00fY2/g00fy2.github.io/commit/a85e4401d388aa7247e9de8092c6bcb0fdeb1148))
+* Add support for company info ([24fcefe](https://github.com/G00fY2/g00fy2.github.io/commit/24fcefe212f21d1599fa57a80466705f43518ee6#diff-7cf4c69a410525138d5ebc100363d6e7))
+* Add social support for Reddit and Xing ([a85e440](https://github.com/G00fY2/g00fy2.github.io/commit/a85e4401d388aa7247e9de8092c6bcb0fdeb1148#diff-30c65bcc6951e40eec5a7fffbdce31d3))
 
 ### Refresh content
 
