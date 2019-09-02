@@ -1,0 +1,17 @@
+name: Rebuild pages
+
+on:
+  schedule:
+  - cron: 0 2 * * 0-6
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Create empty commit
+      run: git commit -m 'rebuild pages' --allow-empty
+    - name: Push commit to trigger gh-pages
+      run: git push
