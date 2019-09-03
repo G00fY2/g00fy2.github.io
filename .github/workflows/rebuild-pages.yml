@@ -11,7 +11,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Create empty commit
-      run: git commit -m 'rebuild pages' --allow-empty
-    - name: Push commit to trigger gh-pages
-      run: git push
+    - name: Trigger pages build and deployment
+      run: curl -u yourname:${GITHUB_TOKEN} -X POST https://api.github.com/repos/G00fY2/g00fy2.github.io/pages/builds -H "Accept: application/vnd.github.mister-fantastic-preview+json"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
