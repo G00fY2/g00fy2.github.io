@@ -12,6 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Trigger pages build and deployment
-      run: curl -u yourname:${GITHUB_TOKEN} -X POST https://api.github.com/repos/G00fY2/g00fy2.github.io/pages/builds -H "Accept: application/vnd.github.mister-fantastic-preview+json"
+      run: curl -u yourname:${GITHUB_TOKEN} -X POST https://api.github.com/repos/G00fY2/g00fy2.github.io/pages/builds -H "Accept:application/vnd.github.mister-fantastic-preview+json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
