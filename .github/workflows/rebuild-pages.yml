@@ -1,17 +1,19 @@
 name: Rebuild pages
 
 on:
-#  schedule:
-#  - cron: 0 2 * * 0-6
+  schedule:
+  - cron:  '0 3 * * *' # Runs every day at 3am
 
 jobs:
-  build:
+  refresh:
 
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v1
-    - name: Trigger pages build and deployment
-      run: curl -u yourname:${GITHUB_TOKEN} -X POST https://api.github.com/repos/G00fY2/g00fy2.github.io/pages/builds -H "Accept:application/vnd.github.mister-fantastic-preview+json"
+    - name: Trigger pages rebuild
+      run: |
+        curl --fail --request POST \
+          --url https://api.github.com/repos/${{ github.repository }}/pages/builds \
+          --header "Authorization: Bearer $GITHUB_TOKEN"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
