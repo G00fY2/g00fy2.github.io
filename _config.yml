@@ -20,7 +20,7 @@ projects:
   sort_by: stars
   limit: 6
   exclude:
-    archived: false
+    archived: true
     forks: false
     projects:
     # - repo-name
