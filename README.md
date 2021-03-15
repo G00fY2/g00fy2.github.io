@@ -1,6 +1,4 @@
-#### Fork of github/personal-website for generating a [personal website](https://g00fy2.github.io) hosted on github pages
-
-For details on how to set everything up, see the original [README](https://github.com/github/personal-website/blob/master/README.md)
+#### Fork of [github/personal-website](https://github.com/github/personal-website) for generating a personal website hosted on github pages
 
 ### Changes I made
 
@@ -9,8 +7,8 @@ For details on how to set everything up, see the original [README](https://githu
 
 ### Refresh content
 
-Since github pages is static we need to rebuild this project to update the content (e.g. data, repositories, stars, ...).
-The easiest way to do so is `git commit -m 'rebuild pages' --allow-empty` and push.
+Since GitHub pages is static we need to rebuild this project to update the content (e.g. data, repositories, stars, ...).
+Therefore I created a scheduled GitHub action to trigger rebuilding once a day.
 
 ### License
 
